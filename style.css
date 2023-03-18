@@ -35,7 +35,7 @@ body {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     border-radius: 20px;
-    width: 15rem;
+    width: 15rem auto;
     background: #cbc1d2;
 
 }
