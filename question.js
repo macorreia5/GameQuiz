@@ -1,5 +1,5 @@
 //questions
-var questionBank= [
+let questionBank= [
     {
         question:'Where do Rachel and Ross go on their first date?',
         option: ['The Cinema','Ross Museum','Central Perk','The Empire State Building'],
