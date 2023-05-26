@@ -42,22 +42,22 @@ var questionBank= [
     },
 ]
 
-var question= document.getElementById('question');
-var quizContainer= document.getElementById('quiz-container');
-var scorecard= document.getElementById('scorecard');
-var option0= document.getElementById('option0');
-var option1= document.getElementById('option1');
-var option2= document.getElementById('option2');
-var option3= document.getElementById('option3');
-var options= document.querySelector('.next');
-var points= document.getElementById('score');
-var span= document.querySelectorAll('span');
-var i=0;
-var score=0;
+let question= document.getElementById('question');
+let quizContainer= document.getElementById('quiz-container');
+let scorecard= document.getElementById('scorecard');
+let option0= document.getElementById('option0');
+let option1= document.getElementById('option1');
+let option2= document.getElementById('option2');
+let option3= document.getElementById('option3');
+let options= document.querySelector('.next');
+let points= document.getElementById('score');
+let span= document.querySelectorAll('span');
+let i=0;
+let score=0;
 
 //question on display
 function displayQuestion() {
-    for(var a=0;a<span.length;a++){
+    for(let a = 0; a < span.length; a++){
         span[a].style.background='none';
     }
     question.innerHTML= questionBank[i].question;
@@ -103,13 +103,13 @@ function backToQuiz() {
 
 //check answers 
 function checkAnswer() {
-    var answerBank= document.getElementById ('answerBank');
-    var answers= document.getElementById ('answers');
+    let answerBank= document.getElementById ('answerBank');
+    let answers= document.getElementById ('answers');
     answerBank.style.display= 'block';
     scoreboard.style.display= 'none';
-    for(var a=0;a<questionBank.length;a++)
+    for(let a=0;a<questionBank.length;a++)
     {
-        var list= document.createElement('li')
+        let list= document.createElement('li')
         ;
         list.innerHTML= questionBank[a].answer;
         answers.appendChild(list);
